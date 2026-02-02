@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>FreeFlix | Assistir</title>
+
+<style>
+body {
+  background:#000;
+  color:#fff;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align:center;
+  padding:15px;
+  border-bottom:1px solid #222;
+}
+
+video {
+  width:90%;
+  max-height:80vh;
+  display:block;
+  margin:30px auto;
+  border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>FREEFLIX</h1>
+</header>
+
+<video id="player" controls autoplay></video>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const video = params.get("video");
+
+if (video) {
+  document.getElementById("player").src = "filmes/" + video;
+}
+</script>
+
+</body>
+</html>

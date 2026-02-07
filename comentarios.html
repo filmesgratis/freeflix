@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Comentários | FreeFlix</title>
 
 <style>
@@ -28,8 +29,11 @@ header {
   align-items: center;
 }
 
+/* LOGO */
 header img {
   height: 36px;
+  max-width: 180px;
+  object-fit: contain;
 }
 
 /* BOTÃO VOLTAR */
@@ -117,6 +121,17 @@ footer {
   color: #777;
   font-size: 14px;
   margin-top: 60px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header {
+    padding: 18px 20px;
+  }
+
+  header img {
+    height: 30px;
+  }
 }
 </style>
 </head>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title id="pageTitle">Assistir | FreeFlix</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  padding: 25px 60px;
+  border-bottom: 1px solid #222;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 30px;
+}
+
+.titulo-filme {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.player-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+
+.player-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.voltar {
+  margin-top: 40px;
+}
+
+.voltar a {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>FREEFLIX</header>
+
+<div class="main">
+
+  <h1 class="titulo-filme" id="tituloFilme">Carregando...</h1>
+
+  <div class="player-wrapper">
+    <script id="playerScript"></script>
+    <iframe id="playerIframe" scrolling="no" allowfullscreen></iframe>
+  </div>
+
+  <div class="voltar">
+    <a href="filmes.html">← Voltar ao catálogo</a>
+  </div>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const videoId = params.get("id");
+const titulo = params.get("titulo");
+
+if (videoId) {
+  const tituloFinal = titulo ? decodeURIComponent(titulo) : "Assistir filme";
+
+  document.getElementById("tituloFilme").innerText = tituloFinal;
+  document.title = tituloFinal + " | FreeFlix";
+
+  document.getElementById("playerScript").src =
+    "https://go.screenpal.com/consumption/player_appearance/" + videoId + "/1.777778";
+
+  document.getElementById("playerIframe").src =
+    "https://go.screenpal.com/player/" + videoId + "?embed=1&download=0&share=0&cl=0";
+} else {
+  document.getElementById("tituloFilme").innerText = "Vídeo não encontrado";
+}
+</script>
+
+</body>
+</html>

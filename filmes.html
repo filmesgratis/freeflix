@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>FreeFlix | Filmes</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  padding: 25px 60px;
+  border-bottom: 1px solid #222;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+.main {
+  max-width: 1300px;
+  margin: auto;
+  padding: 50px 30px;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.capa {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+}
+
+.titulo {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .catalogo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .catalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>FREEFLIX</header>
+
+<div class="main">
+
+  <section class="catalogo">
+
+    <!-- Homem de ferro -->
+    <div class="card" onclick="window.location.href='player.html?id=cOn13An38W9&titulo=Homem%20de%20Ferro'">
+      <div class="capa" style="background-image:url('capas/Homem_de_Ferro.jpg')"></div>
+      <div class="titulo">Homem de Ferro</div>
+    </div>
+
+    <!-- Homem de ferro 2 -->
+    <div class="card" onclick="window.location.href='player.html?id=cOn1rcn387z&titulo=Homem%20de%20Ferro%202'">
+      <div class="capa" style="background-image:url('capas/Homem_de_Ferro_2.jpg')"></div>
+      <div class="titulo">Homem de Ferro 2</div>
+    </div>
+
+    <!-- Homem de ferro 3 -->
+    <div class="card" onclick="window.location.href='player.html?id=cOn13An38W8&titulo=Homem%20de%20Ferro%203'">
+      <div class="capa" style="background-image:url('capas/Homem_de_Ferro_3.jpg')"></div>
+      <div class="titulo">Homem de Ferro 3</div>
+    </div>
+
+    <!-- Os vingadores -->
+    <div class="card" onclick="window.location.href='player.html?id=cOn100n3PfO&titulo=Os%20Vingadores'">
+      <div class="capa" style="background-image:url('capas/Os Vingadores.jpg')"></div>
+      <div class="titulo">Os Vingadores</div>
+    </div>
+
+    <!-- Vingadores Era de Ultron -->
+    <div class="card" onclick="window.location.href='player.html?id=cOn10Qn3PnA&titulo=Vingadores%20Era%20de%20Ultron'">
+      <div class="capa" style="background-image:url('capas/Vingadores_Era_de_Ultron.jpg')"></div>
+      <div class="titulo">Vingadores Era de Ultron</div>
+    </div>
+
+    <!-- Vingadores Ultimato -->
+    <div class="card" onclick="window.location.href='player.html?id=cOn10Qn3PnB&titulo=Vingadores%20Ultimato'">
+      <div class="capa" style="background-image:url('capas/Vingadores_Ultimato.jpg')"></div>
+      <div class="titulo">Vingadores Ultimato</div>
+    </div>
+
+    <!-- Vingadores Guerra Infinita -->
+    <div class="card" onclick="window.location.href='player.html?id=cOnicQn3Pih&titulo=Vingadores%20Guerra%20Infinita'">
+      <div class="capa" style="background-image:url('capas/Vingadores_Guerra_Infinita.jpg')"></div>
+      <div class="titulo">Vingadores Guerra Infinita</div>
+    </div>
+
+  </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Comentários | FreeFlix</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  padding: 25px 60px;
+  border-bottom: 1px solid #222;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* TITULO */
+.container h1 {
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+/* CUSDIS AJUSTES VISUAIS */
+#cusdis_thread {
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid #222;
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 14px;
+  margin-top: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<header>FREEFLIX • COMENTÁRIOS</header>
+
+<div class="container">
+  <h1>O que você achou do FreeFlix?</h1>
+  <p>Comentários públicos, sem login.</p>
+
+  <div
+    id="cusdis_thread"
+    data-host="https://cusdis.com"
+    data-app-id="SEU_APP_ID_AQUI"
+    data-page-id="freeflix-comentarios"
+    data-page-url="https://seusite.com/comentarios.html"
+    data-page-title="Comentários FreeFlix">
+  </div>
+</div>
+
+<footer>
+  © 2026 FreeFlix • Opinião da comunidade
+</footer>
+
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+</body>
+</html>

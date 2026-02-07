@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FreeFlix | Filmes</title>
 
 <style>
@@ -17,13 +18,19 @@ body {
   color: #fff;
 }
 
+/* HEADER */
 header {
   padding: 25px 60px;
   border-bottom: 1px solid #222;
-  font-size: 26px;
-  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
 }
 
+header img {
+  height: 36px;
+}
+
+/* CONTEÚDO */
 .main {
   max-width: 1300px;
   margin: auto;
@@ -59,6 +66,7 @@ header {
   text-align: center;
 }
 
+/* RESPONSIVO */
 @media (max-width: 1100px) {
   .catalogo {
     grid-template-columns: repeat(3, 1fr);
@@ -66,6 +74,15 @@ header {
 }
 
 @media (max-width: 700px) {
+  header {
+    justify-content: center;
+    padding: 18px;
+  }
+
+  header img {
+    height: 30px;
+  }
+
   .catalogo {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -75,10 +92,11 @@ header {
 
 <body>
 
-<header>FREEFLIX</header>
+<header>
+  <img src="logo.png" alt="FreeFlix">
+</header>
 
 <div class="main">
-
   <section class="catalogo">
 
     <!-- Homem de ferro -->
@@ -130,10 +148,7 @@ header {
     </div>
 
   </section>
-
 </div>
 
 </body>
 </html>
-
-

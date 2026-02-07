@@ -28,6 +28,10 @@ header {
   align-items: center;
 }
 
+header img {
+  height: 36px;
+}
+
 /* BOTÃO VOLTAR */
 header a {
   font-size: 14px;
@@ -120,7 +124,7 @@ footer {
 <body>
 
 <header>
-  FREEFLIX • COMENTÁRIOS
+  <img src="logo.png" alt="FreeFlix">
   <a href="https://filmesgratis.github.io/freeflix/">Voltar</a>
 </header>
 
@@ -128,7 +132,6 @@ footer {
   <h1>O que você achou do FreeFlix?</h1>
   <p>Comentários públicos, sem login e visíveis para todos.</p>
 
-  <!-- CONTADOR REAL -->
   <div class="comment-count">
     <span
       class="cusdis-comment-count"
@@ -138,7 +141,6 @@ footer {
     </span> Faça seu comentario
   </div>
 
-  <!-- CUSDIS -->
   <div
     id="cusdis_thread"
     data-host="https://cusdis.com"
@@ -154,11 +156,9 @@ footer {
   © 2026 FreeFlix • Opinião da comunidade
 </footer>
 
-<!-- SCRIPTS CUSDIS -->
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 <script async src="https://cusdis.com/js/cusdis-count.umd.js"></script>
 <script async defer src="https://cusdis.com/js/widget/lang/pt-br.js"></script>
 
 </body>
 </html>
-

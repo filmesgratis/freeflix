@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="pageTitle">Assistir | FreeFlix</title>
 
 <style>
@@ -17,10 +18,12 @@ body {
   color: #fff;
 }
 
+/* HEADER */
 header {
   padding: 25px 60px;
   border-bottom: 1px solid #222;
   display: flex;
+  justify-content: space-between; /* mesmo do comentários */
   align-items: center;
 }
 
@@ -28,6 +31,22 @@ header img {
   height: 36px;
 }
 
+/* BOTÃO VOLTAR – padrão FreeFlix */
+.btn-voltar {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  background: #e50914;
+  padding: 10px 22px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #b20710;
+}
+
+/* CONTEÚDO */
 .main {
   max-width: 1200px;
   margin: auto;
@@ -56,17 +75,20 @@ header img {
   border: 0;
 }
 
-.voltar {
-  margin-top: 40px;
-}
+/* MOBILE */
+@media (max-width: 700px) {
+  header {
+    padding: 18px 20px;
+  }
 
-.voltar a {
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 30px;
-  border: 2px solid #fff;
-  color: #fff;
-  text-decoration: none;
+  header img {
+    height: 30px;
+  }
+
+  .btn-voltar {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
 }
 </style>
 </head>
@@ -75,6 +97,8 @@ header img {
 
 <header>
   <img src="logo.png" alt="FreeFlix">
+  <!-- BOTÃO NO CANTO SUPERIOR DIREITO -->
+  <a href="filmes.html" class="btn-voltar">Voltar</a>
 </header>
 
 <div class="main">
@@ -84,10 +108,6 @@ header img {
   <div class="player-wrapper">
     <script id="playerScript"></script>
     <iframe id="playerIframe" scrolling="no" allowfullscreen></iframe>
-  </div>
-
-  <div class="voltar">
-    <a href="filmes.html">← Voltar ao catálogo</a>
   </div>
 
 </div>
@@ -109,7 +129,7 @@ if (videoId) {
   document.getElementById("playerIframe").src =
     "https://go.screenpal.com/player/" + videoId + "?embed=1&download=0&share=0&cl=0";
 } else {
-  document.getElementById("tituloFilme").innerText = "Vídeo não encontrado";
+  document.getElementById("tituloFilme").innerText = "Filme não encontrado";
 }
 </script>
 

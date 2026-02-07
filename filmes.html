@@ -23,11 +23,27 @@ header {
   padding: 25px 60px;
   border-bottom: 1px solid #222;
   display: flex;
+  justify-content: space-between; /* <<< IGUAL AO COMENTÁRIOS */
   align-items: center;
 }
 
 header img {
   height: 36px;
+}
+
+/* BOTÃO VOLTAR – padrão FreeFlix */
+.btn-voltar {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  background: #e50914;
+  padding: 10px 22px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #b20710;
 }
 
 /* CONTEÚDO */
@@ -75,8 +91,7 @@ header img {
 
 @media (max-width: 700px) {
   header {
-    justify-content: center;
-    padding: 18px;
+    padding: 18px 20px;
   }
 
   header img {
@@ -86,6 +101,11 @@ header img {
   .catalogo {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .btn-voltar {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
 }
 </style>
 </head>
@@ -93,7 +113,11 @@ header img {
 <body>
 
 <header>
+  <!-- LOGO (esquerda) -->
   <img src="logo.png" alt="FreeFlix">
+
+  <!-- BOTÃO VOLTAR (direita) -->
+  <a href="index.html" class="btn-voltar">Voltar</a>
 </header>
 
 <div class="main">

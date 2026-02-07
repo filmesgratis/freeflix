@@ -63,7 +63,7 @@ header a:hover {
   font-size: 16px;
 }
 
-/* CUSDIS CONTAINER */
+/* CUSDIS EXTERNO (PRETO) */
 #cusdis_thread {
   background: #0f0f0f;
   border: 1px solid #222;
@@ -71,9 +71,31 @@ header a:hover {
   padding: 30px;
 }
 
-/* GARANTE ALTURA */
+/* ALTURA */
 #cusdis_thread iframe {
-  min-height: 420px;
+  min-height: 380px;
+}
+
+/* CAMPOS BRANCOS (CENTRO) */
+#cusdis_thread input,
+#cusdis_thread textarea {
+  background: #ffffff !important;
+  color: #111 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 6px;
+}
+
+/* PLACEHOLDER */
+#cusdis_thread input::placeholder,
+#cusdis_thread textarea::placeholder {
+  color: #888;
+}
+
+/* TEXTOS DO FORMULÁRIO */
+#cusdis_thread label,
+#cusdis_thread .comment-form *,
+#cusdis_thread .comment-input * {
+  color: #111 !important;
 }
 
 /* FOOTER */
@@ -106,7 +128,7 @@ footer {
     data-page-id="freeflix-comentarios"
     data-page-url="https://filmesgratis.github.io/freeflix/comentarios.html"
     data-page-title="Comentários FreeFlix"
-    data-theme="light">
+    data-theme="dark">
   </div>
 </div>
 

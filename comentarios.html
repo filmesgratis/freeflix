@@ -23,31 +23,71 @@ header {
   border-bottom: 1px solid #222;
   font-size: 26px;
   letter-spacing: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BOTÃO VOLTAR */
+header a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  background: #e50914;
+  padding: 10px 22px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+header a:hover {
+  background: #b20710;
 }
 
 /* CONTAINER */
 .container {
-  max-width: 800px;
-  margin: 50px auto;
+  max-width: 900px;
+  margin: 60px auto;
   padding: 0 20px;
+  text-align: center;
 }
 
 /* TITULO */
 .container h1 {
+  font-size: 34px;
   margin-bottom: 10px;
 }
 
 .container p {
   color: #aaa;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  font-size: 16px;
 }
 
-/* CUSDIS AJUSTES VISUAIS */
+/* CUSDIS VISUAL */
 #cusdis_thread {
   background: #0f0f0f;
   border: 1px solid #222;
-  border-radius: 12px;
-  padding: 25px;
+  border-radius: 14px;
+  padding: 30px;
+}
+
+/* GARANTE ALTURA (BOTÃO APARECE) */
+#cusdis_thread iframe {
+  min-height: 380px;
+}
+
+/* CORRIGE TEXTO DOS CAMPOS */
+#cusdis_thread input,
+#cusdis_thread textarea {
+  color: #fff !important;
+  background: #0f0f0f !important;
+  border: 1px solid #333 !important;
+}
+
+/* PLACEHOLDER */
+#cusdis_thread input::placeholder,
+#cusdis_thread textarea::placeholder {
+  color: #888;
 }
 
 /* FOOTER */
@@ -64,15 +104,14 @@ footer {
 
 <body>
 
-<header>FREEFLIX • COMENTÁRIOS</header>
+<header>
+  FREEFLIX • COMENTÁRIOS
+  <a href="https://filmesgratis.github.io/freeflix/">Voltar</a>
+</header>
 
 <div class="container">
   <h1>O que você achou do FreeFlix?</h1>
-  <p>Comentários públicos, sem login.</p>
-
-  <!-- 🔴 PASSO 1: COLE AQUI SEU APP ID DO CUSDIS -->
-  <!-- Exemplo: data-app-id="a1b2c3d4" -->
-  <!-- 🔴 PASSO 2: COLE AQUI O LINK REAL DO GITHUB PAGES -->
+  <p>Comentários públicos, sem login e visíveis para todos.</p>
 
   <div
     id="cusdis_thread"
@@ -81,15 +120,14 @@ footer {
     data-page-id="freeflix-comentarios"
     data-page-url="https://filmesgratis.github.io/freeflix/comentarios.html"
     data-page-title="Comentários FreeFlix">
+    data-theme="dark">
   </div>
-
 </div>
 
 <footer>
   © 2026 FreeFlix • Opinião da comunidade
 </footer>
 
-<!-- 🔴 NÃO APAGUE ESTE SCRIPT -->
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 </body>

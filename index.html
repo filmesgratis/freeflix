@@ -18,21 +18,19 @@
       color: #fff;
     }
 
-    /* HEADER COM LOGO */
     header {
       padding: 20px 40px;
       border-bottom: 1px solid #222;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative; /* referência do botão */
+      position: relative;
     }
 
     header img {
       height: 38px;
     }
 
-    /* BOTÃO COMENTÁRIOS (GRUDADO NO HEADER) */
     .btn-top {
       position: absolute;
       right: 40px;
@@ -52,7 +50,6 @@
       background: #b20710;
     }
 
-    /* HERO */
     .hero {
       min-height: calc(100vh - 80px);
       background:
@@ -79,7 +76,14 @@
       margin-bottom: 30px;
     }
 
-    .hero a {
+    /* CONTAINER DOS BOTÕES */
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-buttons a {
       display: inline-block;
       padding: 15px 40px;
       border-radius: 30px;
@@ -90,11 +94,10 @@
       transition: 0.3s;
     }
 
-    .hero a:hover {
+    .hero-buttons a:hover {
       background: #b20710;
     }
 
-    /* INFO */
     .info {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -117,7 +120,6 @@
       font-size: 15px;
     }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid #222;
       text-align: center;
@@ -126,7 +128,6 @@
       font-size: 14px;
     }
 
-    /* MOBILE */
     @media (max-width: 768px) {
       header {
         padding: 18px;
@@ -156,7 +157,11 @@
         font-size: 16px;
       }
 
-      .hero a {
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-buttons a {
         padding: 14px 32px;
       }
 
@@ -181,7 +186,11 @@
         Sem cadastro, sem login, sem conta, SEM ANÚNCIOS.
         Só entretenimento com a família.
       </p>
-      <a href="filmes.html">Começar</a>
+
+      <div class="hero-buttons">
+        <a href="filmes.html">Começar</a>
+        <a href="apoio.html">Seja um Apoiador!</a>
+      </div>
     </div>
   </section>
 

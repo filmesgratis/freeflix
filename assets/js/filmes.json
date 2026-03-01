@@ -1,4 +1,7 @@
 [
+  { "id":"cOeVYmnZee8","titulo":"Sonic: O Filme","capa":"Sonic_O_Filme.jpg" },
+  { "id":"cOeVYmnZeeN","titulo":"Sonic 2: O Filme","capa":"Sonic_2_O_Filme.jpg" },
+  { "id":"cOeVYmnZeeL","titulo":"Sonic 3: O Filme","capa":"Sonic_3_O_Filme.jpg" },
   { "id":"cOnZf9n0HDi","titulo":"Pica-Pau O Filme","capa":"Pica_Pau_O_Filme.jpg" },
   { "id":"cOnZf9n0HD1","titulo":"Pica-Pau As Férias no Acampamento","capa":"Pica_Pau_As_Férias_no_Acampamento.jpg" },
   { "id":"cOnro1n0kOm","titulo":"Como Eu Era Antes de Você","capa":"Como_Eu_Era_Antes_de_Você.jpg" },
@@ -51,6 +54,7 @@
   { "id":"cOnje7n39C3","titulo":"HomemAranha Através do Aranhaverso","capa":"Homem_Aranha_Através_do_Aranhaverso.jpg" },
   { "id":"cOnjeRn39C9","titulo":"Wall-E","capa":"Wall_E.jpg" }
 ]
+
 
 
 

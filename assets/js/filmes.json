@@ -1,13 +1,13 @@
 [
   { "id":"vf2001","titulo":"Velozes e Furiosos","capa":"Velozes_e_Furiosos.jpg" },
   { "id":"vf2003","titulo":"+ Velozes + Furiosos","capa":"+_Velozes_+_Furiosos.jpg" },
-  { "id":"vf2006","titulo":"Velozes e Furiosos: Desafio em Tóquio","capa":"Velozes_e_Furiosos_Desafio_em_Toquio.jpg" },
+  { "id":"vf2006","titulo":"Velozes e Furiosos: Desafio em Tóquio","capa":"Velozes_e_Furiosos_Desafio_em_Tóquio.jpg" },
   { "id":"vf2009","titulo":"Velozes e Furiosos 4","capa":"Velozes_e_Furiosos_4.jpg" },
-  { "id":"vf2011","titulo":"Velozes e Furiosos 5: Operação Rio","capa":"Velozes_e_Furiosos_5_Operacao_Rio.jpg" },
+  { "id":"vf2011","titulo":"Velozes e Furiosos 5: Operação Rio","capa":"Velozes_e_Furiosos_5_Operação_Rio.jpg" },
   { "id":"vf2013","titulo":"Velozes e Furiosos 6","capa":"Velozes_e_Furiosos_6.jpg" },
   { "id":"vf2015","titulo":"Velozes e Furiosos 7","capa":"Velozes_e_Furiosos_7.jpg" },
   { "id":"vf2017","titulo":"Velozes e Furiosos 8","capa":"Velozes_e_Furiosos_8.jpg" },
-  { "id":"vf2019","titulo":"Velozes e Furiosos: Hobbs & Shaw","capa":"Velozes_e_Furiosos_Hobbs_e_Shaw.jpg" },
+  { "id":"vf2019","titulo":"Velozes e Furiosos: Hobbs & Shaw","capa":"Velozes_e_Furiosos_Hobbs_&_Shaw.jpg" },
   { "id":"vf2021","titulo":"Velozes e Furiosos 9","capa":"Velozes_e_Furiosos_9.jpg" },
   { "id":"vf2023","titulo":"Velozes e Furiosos 10","capa":"Velozes_e_Furiosos_10.jpg" },
   { "id":"cOeVYmnZee8","titulo":"Sonic: O Filme","capa":"Sonic_O_Filme.jpg" },
@@ -65,3 +65,4 @@
   { "id":"cOnje7n39C3","titulo":"Homem-Aranha: Através do Aranhaverso","capa":"Homem_Aranha_Através_do_Aranhaverso.jpg" },
   { "id":"cOnjeRn39C9","titulo":"Wall-E","capa":"Wall_E.jpg" }
 ]
+

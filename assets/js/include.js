@@ -14,7 +14,7 @@ function setupHeaderButtons(){
   let btn = "";
 
   if(page === "index"){
-    btn = `<a class="btn-top" href="comentarios.html">Comentários</a>`;
+    btn = `<a class="btn-top" href="comentarios.html">Peça aqui seu Filme</a>`;
   } else if(page === "filmes"){
     btn = `<a class="btn-top" href="index.html">Voltar</a>`;
   } else if(page === "player"){

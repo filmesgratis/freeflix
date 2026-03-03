@@ -1,4 +1,6 @@
 [
+  { "id":"cOeeV0nZiyx","titulo":"Tropa de Elite","capa":"Tropa_de_Elite.jpg" },
+  { "id":"cOeeVxnZi4D","titulo":"Tropa de Elite 2: O Inimigo Agora é Outro","capa":"Tropa_de_Elite_2_O_Inimigo_Agora_é_Outro.jpg" },
   { "id":"cOeV0inZeoI","titulo":"Velozes e Furiosos","capa":"Velozes_e_Furiosos.jpg" },
   { "id":"cOeV0inZeol","titulo":"+ Velozes + Furiosos","capa":"+_Velozes_+_Furiosos.jpg" },
   { "id":"cOeV0inZeoX","titulo":"Velozes e Furiosos: Desafio em Tóquio","capa":"Velozes_e_Furiosos_Desafio_em_Tóquio.jpg" },
@@ -65,5 +67,6 @@
   { "id":"cOnje7n39C3","titulo":"Homem-Aranha: Através do Aranhaverso","capa":"Homem_Aranha_Através_do_Aranhaverso.jpg" },
   { "id":"cOnjeRn39C9","titulo":"Wall-E","capa":"Wall_E.jpg" }
 ]
+
 
 

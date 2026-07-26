@@ -31,7 +31,7 @@
 
   if (videoId) {
     const iframe = $("playerIframe");
-    if (iframe) iframe.src = `https://go.screenpal.com/player/${videoId}?embed=1`;
+    if (iframe) iframe.src = `https://fast.wistia.net/embed/iframe/${videoId}`;
   }
 
   // ====== Firestore REST config ======
